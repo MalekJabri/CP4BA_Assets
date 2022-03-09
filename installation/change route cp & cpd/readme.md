@@ -19,9 +19,9 @@ The wizard will start:
 
 ![image](https://user-images.githubusercontent.com/33630653/157493957-b8c67498-0880-4295-9403-75affb9a5a35.png)
 
-fill the project/namespace 
-fill the new cpd hostname route
-y/n to create and add the certificate.
+* fill the project/namespace 
+* fill the new cpd hostname route
+* y/n to create and add the certificate.
 
 The script will udpate the configuration and restart the serveral component.
 Please be patient !! It will take some time to propagte all the change.
