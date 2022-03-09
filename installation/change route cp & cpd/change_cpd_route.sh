@@ -1,16 +1,18 @@
 echo "Change the name of CPD console and Apply the fix"
-echo "If new certificate available make sure to add ot the project with the following name external-tls-secret" 
+echo "If new certificate available make sure to add ot the project with the following name external-tls-secret"
+echo "The script will create the secrets: ca.crt : tls/cpd/ca.pem ; cert.tls : tls/cpd/cert.pem ; cert.key : tls/cpd/cert.key"
 
 read -p "Get Project name : " project
 read -p "new cpd hostname name : " hostname
 read -p "Add Certificate yes or no (y-n)": SSL
 oc project $project
 
-if [[ $SS  = "y" ]];
+if [[ $SSL  = "y" ]];
 then
-oc patch AutomationUIConfig iaf-system --type='json' -p '[{"op": "add", "path": "/spec/tls/certificateSecret", "value": {"secretName": "external-tls-secret"} }, {"op": "add", "path": "/spec/zenService/zenCustomRoute", "value": {"route_host":"'$hostname'"}}]'    
+oc -n $project create secret generic external-tls-secret --from-file=cert.crt=tls/cpd/cert.pem --from-file=cert.key=tls/cpd/cert.key --from-file=ca.crt=tls/cpd/ca.pem --dry-run=client -o yaml | oc apply -f -
+oc patch AutomationUIConfig iaf-system --type='json' -p '[{"op": "add", "path": "/spec/tls/certificateSecret", "value": {"secretName": "external-tls-secret"} }, {"op": "add", "path": "/spec/zenService/zenCustomRoute", "value": {"route_host":"'$hostname'"}}]'
 oc delete pod -l app.kubernetes.io/component=ibm-nginx
-else 
+else
 oc patch AutomationUIConfig iaf-system --type='json' -p '[{"op": "add", "path": "/spec/zenService/zenCustomRoute", "value": {"route_host":"'$hostname'"}}]'
 fi
 
