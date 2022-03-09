@@ -9,7 +9,7 @@ This script has been tested on Redhat as OS client and Openshift on IBM Cloud.
 * OC client active connection to your cluster
 * Add the different certificate in the tls folder for the cp and cpd if needed. 
 
-# change the cpd route (You will need to run this script for each cp4ba deployment):
+# change the cpd route ( run this script for each cp4ba deployment):
     
 Donwload this folder, open a console
 
@@ -26,7 +26,7 @@ The wizard will start:
 The script will udpate the configuration and restart the serveral component.
 Please be patient !! It will take some time to propagte all the change.
 
-# Change the cp route (You only need to run it once for an openshift cluster):
+# Change the cp route ( run it once per openshift cluster):
 
    ./change_cp_route.sh
 
