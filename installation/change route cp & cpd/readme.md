@@ -21,7 +21,7 @@ The wizard will start:
 
 * fill the project/namespace 
 * fill the new cpd hostname route
-* y/n to create the secrets and add the certificate.
+* y/n to create the secrets based on the certificates.
 
 The script will udpate the configuration and restart the serveral component.
 Please be patient !! It will take some time to propagte all the change.
@@ -36,7 +36,7 @@ The wizard will start:
 
 
 * fill the new cp hostname route
-* y/n to create the secrets and add the certificate.
+* y/n to create the secrets based on the certificates.
 - The script will udpate the configuration and restart the serveral component.
 - The Job for the new cp hostname will be run 
 - The list of all the CP4BA project will be listed 
