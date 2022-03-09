@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+ name: cs-onprem-tenant-config
+ namespace: ibm-common-services
+labels:
+ cs_onprem_tenant_config: "true"
+data:
+ custom_hostname: custom_url
