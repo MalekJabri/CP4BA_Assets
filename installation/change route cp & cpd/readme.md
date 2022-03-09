@@ -9,7 +9,7 @@ This script has been tested on Redhat as OS client and Openshift on IBM Cloud.
 * OC client active connection to your cluster
 * Add the different certificate in the tls folder for the cp and cpd if needed. 
 
-# change the cpd route:
+# change the cpd route (You will need to run this script for each cp4ba deployment):
     
 Donwload this folder, open a console
 
@@ -21,10 +21,24 @@ The wizard will start:
 
 * fill the project/namespace 
 * fill the new cpd hostname route
-* y/n to create and add the certificate.
+* y/n to create the secrets and add the certificate.
 
 The script will udpate the configuration and restart the serveral component.
 Please be patient !! It will take some time to propagte all the change.
 
-# Change the cp route:
+# Change the cp route (You only need to run it once for an openshift cluster):
 
+   ./change_cp_route.sh
+
+The wizard will start: 
+
+![image](https://user-images.githubusercontent.com/33630653/157495762-880688c7-d9f7-448a-a753-bb2dfcc332ec.png)
+
+
+* fill the new cp hostname route
+* y/n to create the secrets and add the certificate.
+- The script will udpate the configuration and restart the serveral component.
+- The Job for the new cp hostname will be run 
+- The list of all the CP4BA project will be listed 
+* You can choose to update all the project at one (y/n) The CP4BA 20.X are not impacted
+* You can specify which project to select 
