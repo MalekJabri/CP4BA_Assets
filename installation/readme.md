@@ -1,7 +1,5 @@
----
 title: 21.0.3 fresh Install
-tags: []
----
+
 
 # Install of the CP4BA
 
@@ -97,7 +95,7 @@ https://github.com/IBM/cloud-pak/tree/master/repo/case/ibm-cp-automation
     * Copy the database library in the operator-shared-pvc/jdbc/db2/
     * Get you Entitlement Key from the portal https://myibm.ibm.com/products-services/containerlibrary
     
-        ![](image-kxpwtwaf.png)
+        ![](./attachments/image-kxpwtwaf.png?raw=true)
     
     * Create the admin.registry 
         
@@ -109,22 +107,22 @@ https://github.com/IBM/cloud-pak/tree/master/repo/case/ibm-cp-automation
          
     * search  the CP4BA OLM 
 
-        ![](image-kxpx3srg.png)
+        ![](./attachments/image-kxpx3srg.png?raw=true)
         
     * Install it 
 
-        ![](image-kxpx5bja.png)
+        ![](./attachments/image-kxpx5bja.png?raw=true)
         
     * Wait until the installation is done. Be aware that a couple of other operator will be installed as we now include the foundation layer.
     
-        ![](image-kxpxaswx.png)
+        ![](./attachments/image-kxpxaswx.png?raw=true)
 
-        ![](image-kxpxgrs3.png)
+        ![](./attachments/image-kxpxgrs3.png?raw=true)
         
         
     * Please wait until all the sub operator are up and running : 
 
-        ![](image-kxpxis05.png)
+        ![](./attachments/image-kxpxis05.png?raw=true)
              
     * Make sure to enable the support of db2 on nfs
 
@@ -205,15 +203,15 @@ https://github.com/IBM/cloud-pak/tree/master/repo/case/ibm-cp-automation
 
     * Click on Cartridge on the IBM Automation Foundation Core 
 
-        ![](image-kxq3k9nj.png)
+        ![](./attachments/image-kxq3k9nj.png?raw=true)
         
     * Click on the project 
     
-        ![](image-kxq3ltzh.png)
+        ![](./attachments/image-kxq3ltzh.png?raw=true)
         
     * Scroll down on the conditions section and verify that the status is true for the following components
     
-        ![](image-kxq3oi7o.png)
+        ![](./attachments/image-kxq3oi7o.png?raw=true)
         
 ## Test Foundation 
 
@@ -221,17 +219,17 @@ The CP console is the unified portal for all the cloud paks installed on the pla
 
 * Retrieve first the password to connect to the cp console.
 * Connect to the common service project and select workloads and secrets
-![](image-kxq5l0ks.png)
+![](./attachments/image-kxq5l0ks.png?raw=true)
 * Search for the following secrets: ibm-iam-bindinfo-platform-auth-idp-credentials
 * Copy the password 
-![](image-kxq5jkzk.png)
+![](./attachments/image-kxq5jkzk.png?raw=true)
 * <b>On the common service project </b> select on the right side networking and then  routes
 
-![](image-kxq3u7yd.png)
+![](./attachments/image-kxq3u7yd.png?raw=true)
  
 * Click on the cp console location (url). 
 
-![](image-kxq5mu3a.png)
+![](./attachments/image-kxq5mu3a.png?raw=true)
 
 ## Diff 20.0.3 to 21.0.3
 
@@ -259,7 +257,7 @@ I had to delete the zen service manually and please keep an eye on the common se
 
 Issue with the oidc pointing to the old ums configuration 
 
-![](image-kxrip1z8.png)
+![](./attachments/image-kxrip1z8.png?raw=true)
 
         Start the entrypoint under privilege '1000710000'
         Info: Take command './initAE.sh' as frontend service
@@ -304,7 +302,7 @@ Issue with the oidc pointing to the old ums configuration
          can't import /opt/ibm/applications/toolkits/SystemData-TC.zip, error: The access token is invalid.
         Error
     
-   ![](image-kxrimzgp.png)
+   ![](./attachments/image-kxrimzgp.png?raw=true)
    
    
  NameImageResource limitsPorts
