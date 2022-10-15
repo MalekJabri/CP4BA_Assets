@@ -1,0 +1,8 @@
+<server>
+ <authCache timeout="120m"/>
+ <httpSession
+   cookieSecure="true"
+   invalidationTimeout="120m"
+   invalidateOnUnauthorizedSessionRequestException="true" />
+ <ltpa expiration="120m" />
+</server>
