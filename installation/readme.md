@@ -1,7 +1,5 @@
----
 title: 21.0.3 fresh Install
-tags: []
----
+
 
 # Install of the CP4BA
 
