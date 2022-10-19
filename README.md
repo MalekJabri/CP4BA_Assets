@@ -15,6 +15,7 @@ The scripts have been tested on ROKS but should be compatible with classic Opens
 ### Generation
 
 
+comming soon ! 
 ***
 ### Cleaning
 
@@ -23,9 +24,7 @@ This script will clean and destroy all the components related to Cloud pak for B
 ***
 ### Operator Logs
 
-
-
-If you are facing some 
+comming soon ! 
 
 ***
 
