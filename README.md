@@ -33,7 +33,7 @@ If you are facing some
 
 This script can be used to update the timeout for the components included in the Cloud pak For Business Automation 
 
-For the moment the component supported are : 
+For the moment, This is the list of all the components supported: 
 
 * Filenet
     - CPE
