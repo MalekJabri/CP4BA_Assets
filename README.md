@@ -18,7 +18,7 @@ The scripts have been tested on ROKS but should be compatible with classic Opens
 ***
 ### Cleaning
 
-This script will clean and destroy all the components related to Cloud pak for Business automation including 
+This script will clean and destroy all the components related to Cloud pak for Business automation including the common service project.
 
 ***
 ### Operator Logs
