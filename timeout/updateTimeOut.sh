@@ -161,19 +161,19 @@ else
 	        echo "$line" >> $output
 	        if [ -z "$curenZenExp" ]; then
 	           echo "TOKEN_EXPIRY_TIME does not exist and add it "
-	           echo '  TOKEN_EXPIRY_TIME: "'$ExpirationTimeInSecond'"' >> $output
+	           echo '  TOKEN_EXPIRY_TIME: "'$ExpirationTimeInHour'"' >> $output
 	        fi
 	        if [ -z "$curenZenTokExp" ]; then
 	           echo "TOKEN_REFRESH_PERIOD does not exist and add it "
-	           echo '  TOKEN_REFRESH_PERIOD: "'$RefreshTokenInHour'h"' >> $output
+	           echo '  TOKEN_REFRESH_PERIOD: "'$RefreshTokenInHour'"' >> $output
 	        fi
 	      else
 	        if [ ! -z "$curenZenExp"  ] && [[ "$line" == "  TOKEN_EXPIRY_TIME:"*  ]]; then
 	           echo "TOKEN_EXPIRY_TIME does exist and modify it "
-	           echo '  TOKEN_EXPIRY_TIME: "'$ExpirationTimeInSecond'"' >> $output
+	           echo '  TOKEN_EXPIRY_TIME: "'$ExpirationTimeInHour'"' >> $output
 	         elif [ ! -z "$curenZenTokExp" ] && [[  "$line" == "  TOKEN_REFRESH_PERIOD:"* ]]; then
 	           echo "TOKEN_REFRESH_PERIOD does exist and modify it "
-	           echo '  TOKEN_REFRESH_PERIOD: "'$RefreshTokenInHour'h"' >> $output
+	           echo '  TOKEN_REFRESH_PERIOD: "'$RefreshTokenInHour'"' >> $output
 	        else
 	         echo "$line" >> $output
 	         fi
