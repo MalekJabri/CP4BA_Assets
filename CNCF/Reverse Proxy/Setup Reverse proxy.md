@@ -1,7 +1,3 @@
----
-title: Setup Reverse proxy
-tags: []
----
 
 # Reverse proxy for CNCF BAW Deployment.
 
