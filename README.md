@@ -15,17 +15,16 @@ The scripts have been tested on ROKS but should be compatible with classic Opens
 ### Generation
 
 
+coming soon ! 
 ***
 ### Cleaning
 
-This script will clean and destroy all the components related to Cloud pak for Business automation including 
+This script will clean and destroy all the components related to Cloud pak for Business automation including the common service project.
 
 ***
 ### Operator Logs
 
-
-
-If you are facing some 
+coming soon ! 
 
 ***
 
@@ -33,7 +32,7 @@ If you are facing some
 
 This script can be used to update the timeout for the components included in the Cloud pak For Business Automation 
 
-For the moment the component supported are : 
+For the moment, This is the list of all the components supported: 
 
 * Filenet
     - CPE
